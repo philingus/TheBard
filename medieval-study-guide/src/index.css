@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .medieval-frame {
+    @apply bg-parchment/90 border-4 border-accent rounded-lg p-8 shadow-lg relative;
+  }
+  
+  .medieval-button {
+    @apply bg-accent text-parchment px-6 py-3 rounded-md font-medieval 
+           transform transition-all duration-300 hover:scale-105 
+           hover:shadow-magic hover:bg-ink cursor-pointer;
+  }
+
+  .glowing-text {
+    @apply animate-pulse-slow text-accent font-medieval;
+  }
+}
+
+@font-face {
+  font-family: 'MedievalSharp';
+  src: url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+}
+
+body {
+  @apply bg-ink min-h-screen;
+  background: url('/studyd.gif') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'MedievalSharp', cursive;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+}

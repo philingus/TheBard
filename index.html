@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bard's Study Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Page -->
+        <div class="page" id="welcome-page">
+            <div class="medieval-frame">
+                <h1>The Bard's Study Guide</h1>
+                <img src="scroll-logo.png" alt="Medieval Scroll" class="logo">
+                <button class="medieval-btn" onclick="showPage('subject-page')">Begin Your Quest</button>
+            </div>
+        </div>
+
+        <!-- Subject Selection Page -->
+        <div class="page hidden" id="subject-page">
+            <div class="medieval-frame">
+                <h2>I'm here to help you lock in, what would you like to study?</h2>
+                <input type="text" class="medieval-input" placeholder="Enter your subject...">
+                <button class="medieval-btn" onclick="showPage('environment-page')">Proceed</button>
+            </div>
+        </div>
+
+        <!-- Environment Selection Page -->
+        <div class="page hidden" id="environment-page">
+            <div class="medieval-frame">
+                <h2>What kind of environment would you like to study in?</h2>
+                <div class="suggestion-grid">
+                    <button class="suggestion-btn" onclick="showPage('result-page')">Place with Halal Food</button>
+                    <button class="suggestion-btn" onclick="showPage('result-page')">Disability Friendly</button>
+                    <button class="suggestion-btn" onclick="showPage('result-page')">Spacious and Warm</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Page -->
+        <div class="page hidden" id="result-page">
+            <div class="medieval-frame">
+                <h2>Your Personalized Study Guide</h2>
+                <div class="loading hidden">
+                    <p>The ancient scrolls are being consulted...</p>
+                    <div class="loader"></div>
+                </div>
+                <div class="result-content">
+                    <div class="task-list">
+                        <h3>Task List</h3>
+                        <ul>
+                            <li>Review Chapter 1 - Foundations</li>
+                            <li>Complete Practice Problems</li>
+                            <li>Create Study Notes</li>
+                            <li>Take Mock Quiz</li>
+                        </ul>
+                    </div>
+                    <div class="location-recommendation">
+                        <h3>Recommended Study Location</h3>
+                        <p>Nancy Thompson Library Learning Commons</p>
+                        <ul>
+                            <li>Quiet study areas on the 3rd floor</li>
+                            <li>Close to Halal food options</li>
+                            <li>Accessible facilities</li>
+                            <li>Comfortable seating and temperature control</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
