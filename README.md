@@ -1,61 +1,53 @@
-# 🧙‍♂️ StudyBard
+# 🧙‍♂️ StudyBard  
+Your enchanted academic companion for AI-powered study planning and magical study spot discovery.  
+🏆 **1st Place – KeanUHackThis 2025 Hackathon**
 
-> *Your enchanted academic companion for study planning, personalized AI guidance, and magical study spot discovery.*  
-> Built with empathy. Powered by AI. Wrapped in medieval charm. ✨
+## 📖 About  
+StudyBard is a **full-stack**, gamified productivity app that helps students plan their study sessions and find the best nearby spots — all wrapped in a medieval theme. Built in just 36 hours during KeanUHackThis, it combines AI, geolocation, and an immersive UI to turn studying into an adventure.
 
----
+## ⚔️ Key Features  
+- 📜 **AI-Powered Study Planner**  
+  Uses OpenAI API to break down tasks, suggest pomodoro timers, and give motivational tips.  
 
-## 🏆 About the Project
+- 🗺️ **Location-Based Study Spot Finder**  
+  Google Maps API recommends nearby study-friendly locations, factoring in food, noise level, Wi-Fi, and accessibility.  
 
-**StudyBard** was built during a hackathon to solve a real challenge:  
-🎯 *Students often struggle to figure out what to study, where to study, and how to stay focused.*
+- 🧠 **Session Memory**  
+  Remembers your topic and preferences across pages using React Hooks.  
 
-StudyBard is your AI-powered academic ally. It crafts a custom study plan and recommends local study-friendly locations — all in a gamified, medieval-themed interface.
+- 🎨 **Fantasy-Themed UI**  
+  Tailwind CSS + Framer Motion power glowing scroll effects, pixel-style art, and animated transitions.
 
----
+## 💻 Full-Stack Tech Stack  
+| Tech               | Use Case                                 |
+|--------------------|-------------------------------------------|
+| React              | Frontend Framework                        |
+| Tailwind CSS       | Custom Styling + UI Theme                 |
+| Framer Motion      | Animations + Transitions                  |
+| OpenAI API         | Dynamic Study Plan Generation             |
+| Google Maps API    | Study Spot Recommendations               |
+| Vite               | Build Tooling + Dev Server                |
+| Firebase (optional)| Backend storage for future enhancements   |
 
-## 🛠️ Features
+## 🧪 Challenges Overcome  
+- Coordinating medieval visuals with modern APIs  
+- Seamlessly integrating multiple APIs  
+- Gamifying productivity without sacrificing usability
 
-### 📜 AI-Powered Study Planner
-- Users input their study topic (e.g., *“Stoichiometry for Chem Exam”*), and the app uses **prompt engineering + OpenAI API** to generate a **personalized study guide**, complete with:
-  - Task breakdowns
-  - Pomodoro timers
-  - Bonus productivity tips
-  - Motivational support
+## 🚀 Run Locally  
+```bash
+git clone https://github.com/philingus/StudyBard.git
+cd StudyBard
+npm install
+npm run dev
+```
 
-### 🗺️ Location-Based Study Spot Recommender
-- Uses **Google Maps Embed API** to recommend curated study spots around **Kean University**
-- Takes into account:
-  - ✅ Halal food access
-  - ✅ Disability-friendly spaces
-  - ✅ Quietness, comfort, Wi-Fi speed, and more
-- Includes **mock reviews** from fictional students (with React animation)
+Then open your browser at: [http://localhost:3000](http://localhost:3000)
 
-### 🧠 Intelligent User Flow (with Memory)
-- Remembers user’s input and preferences across pages
-- Uses React `useState` hooks for managing session state
-
-### 🎨 Magical UI with Medieval Theme
-- Handcrafted pixel-style background (animated `.gif`)
-- Fantasy fonts + glowing elements + scroll-style progress
-- Uses **Tailwind CSS** with custom classes for immersion
-
-### ⚡ Fast, Responsive, and Animated
-- Built with **Vite + React + Framer Motion**
-- Fully responsive and optimized for demo performance
-
----
-
-## 📍 Tech Stack
-
-| Tech            | Use Case                              |
-|-----------------|----------------------------------------|
-| React           | Frontend framework                    |
-| Tailwind CSS    | Styling + custom UI theme              |
-| Framer Motion   | Page transitions + animations          |
-| OpenAI API      | Dynamic study plan generation (text AI)|
-| Google Maps API | Location embedding + spot suggestions  |
-| Vite            | Dev environment and build tooling      |
+## 📺 Demo  
+- [YouTube Demo](https://lnkd.in/eU-WPFm9)
 
 ---
+*Built with empathy. Powered by AI. Wrapped in medieval charm.* ✨
+
 
